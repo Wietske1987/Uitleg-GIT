@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 4</title>
+</head>
+<body>
+    <h1 style="text-align:center">Dit is opdracht 4</h1><br>
+    <h2 style="text-align:center">De 4 Buttons</h2><br>
+    <input type="button" value="A" onclick="KlikA()">
+    <input type="button" value="B" onclick="KlikB()">
+    <input type="button" value="C" onclick="KlikC()">
+    <input type="button" value="D" onclick="KlikD()">
+    </input><br><br>
+    <div  id="antwoord"></div>
+</body>
+<style>
+    h1 {color:crimson; font-style:normal; font: size 50px;; font-family:monospace;}
+    h2 {color:Darkcyan; font-style:italic; font-size:x-large; font-family:monospace;}
+    .uitkomst {
+        border: 5px; color:black;
+        background-color:lightcoral;
+        text-align:center;
+</style>
+<script>
+    
+    function KlikA() {
+        var x = document.createElement("KnopA");
+        var y = document.createElement("br");
+        x.innerText = "Je hebt op knop A geklikt";
+        document.getElementById("antwoord").appendChild(x).append(y);
+    }
+    function KlikB() {
+        var x = document.createElement("KnopA");
+        var y = document.createElement("br");
+        x.innerText = "Je hebt op knop B geklikt";
+        document.getElementById("antwoord").appendChild(x).append(y);
+    }
+    function KlikC() {
+        var x = document.createElement("KnopA");
+        var y = document.createElement("br");
+        x.innerText = "Je hebt op knop C geklikt";
+        document.getElementById("antwoord").appendChild(x).append(y);
+    }
+    function KlikD() {
+        var x = document.createElement("KnopA");
+        var y = document.createElement("br");
+        x.innerText = "Je hebt op knop D geklikt";
+        document.getElementById("antwoord").appendChild(x).append(y);
+    }
+</script>
+</html>
