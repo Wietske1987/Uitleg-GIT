@@ -29,9 +29,10 @@ td {
     var reeks = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
     function muisklik(blokje,nummer) { 
-        reeks[nummer] = ++1
+        reeks[nummer] = 1;
             var allecellen = document.getElementsByTagName("td");
             for(var x=0; x <reeks.length; x++){
+                //console.log(reeks[x]);
                 if(reeks[x]==0){
                 allecellen[x].style.backgroundColor = "rgb(179, 86, 171)";
                 }
@@ -39,7 +40,7 @@ td {
                 allecellen[x].style.backgroundColor='yellow';
                 }
         }
-        console.log(reeks[x]);
+        
       }
         
 
